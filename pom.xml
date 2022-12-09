@@ -27,31 +27,24 @@
 		<jacoco.version>0.7.9</jacoco.version>
 		
 		<!-- SonarQube Integration -->
-		<sonar.organization>kummari</sonar.organization>
-		<sonar.projectKey>staropscenter</sonar.projectKey>
+		<sonar.organization>sonar-jrog</sonar.organization>
+		<sonar.projectKey>jfrog-key</sonar.projectKey>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-		<sonar.login>fd7ddeeb1b853985e1f77872d0e65dffb83d0b0e</sonar.login>
+		<sonar.login>cf3378651ae47a27abb232120432b664b6f0d72b</sonar.login>
 	</properties>
 	
 	<!-- Jfrog Integration with POM.xml file -->
 <distributionManagement>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>example-repo-local</name>
-        <url>https://cloudbinary.jfrog.io/artifactory/example-repo-local/</url>
-    </snapshotRepository>
     <repository>
-        <id>example-repo-local</id>
-        <name>example-repo-local</name>
-        <url>https://cloudbinary.jfrog.io/artifactory/example-repo-local/</url>
+        <id>central</id>
+        <name>a0hpamxexhpkf-artifactory-primary-0-releases</name>
+        <url>https://santhoshdevops.jfrog.io/artifactory/libs-release</url>
     </repository>
 </distributionManagement>
-
-	
 	<scm>
-		<connection>scm:git:git@github.com:kesavkummari/javacodescan.git</connection>
-		<developerConnection>scm:git:git@github.com:kesavkummari/javacodescan.git</developerConnection>
-		<url>git@github.com:kesavkummari/javacodescan.git</url>
+		<connection>scm:git:git@github.com:81062/sonar-jfrog.git</connection>
+		<developerConnection>scm:git:git@github.com:81062/sonar-jfrog.git</developerConnection>
+		<url>git@github.com:81062/sonar-jrog.git</url>
 		<tag>HEAD</tag>
 	</scm>
 
