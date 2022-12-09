@@ -35,12 +35,17 @@
 	
 	<!-- Jfrog Integration with POM.xml file -->
 <distributionManagement>
+    <snapshotRepository>
+        <id>libs-snapshot-local</id>
+        <name>libs-snapshot-local</name>
+        <url>https://santhoshdevops.jfrog.io/artifactory/libs-snapshot-local/
+    </snapshotRepository>
     <repository>
-        <id>central</id>
-        <name>a0hpamxexhpkf-artifactory-primary-0-releases</name>
-        <url>https://santhoshdevops.jfrog.io/artifactory/libs-release</url>
+        <id>libs-snapshot-local</id>
+        <name>libs-snapshot-local</name>
+        <url>https://santhoshdevops.jfrog.io/artifactory/libs-snapshot-local/
     </repository>
-</distributionManagement>
+</distributionManagement>>
 	<scm>
 		<connection>scm:git:git@github.com:81062/sonar-jfrog.git</connection>
 		<developerConnection>scm:git:git@github.com:81062/sonar-jfrog.git</developerConnection>
